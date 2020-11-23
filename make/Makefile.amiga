@@ -1,0 +1,18 @@
+### Makefile for Amiga Computers (based on the M68000 processor series, not
+### PowerPC class machines.)
+### This should be run nat 
+### FIXME : This should be run natively, as it uses less resources for Amiga C 
+
+CC=cc
+AS=asm
+LD=ld
+
+OBJS= src/symbols/lambdasymbol.o \
+	src/symbols/variablesymbol.o \  ### These 2 files should do
+
+
+all: ${OBJS}
+	${LD} -o libracul.o ${OBJS}  
+
+.asm.o: ${AS} $<
+.c.o: ${CC} -Isrc/symbols -c $<  ### FIXME -I
