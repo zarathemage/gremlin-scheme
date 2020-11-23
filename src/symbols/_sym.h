@@ -1,4 +1,4 @@
-/* Copyright (C) The Holy Ghost 2020. See the LICENSE file for details */
+/* Copyright (C) Zara 2020. See the LICENSE file for details */
 
 /* NOTE (Mon 07/27/2020) :
  * This file contains raw symbols in the sense that these contain a hexadecimal

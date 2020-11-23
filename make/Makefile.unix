@@ -10,9 +10,8 @@ OBJS= src/symbols/lambdasymbol.o \
 	src/api/api.symbols.o \
 
 all: ${OBJS}
-	${LD} -o libracul.so ${OBJS}  
 
 clean:
-	rm -f libracul.so ${OBJS}
+	rm -f ${OBJS}
 
 .c.o: ${CC} -I./src/symbols -I./src/api -c $<

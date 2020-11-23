@@ -9,9 +9,8 @@ OBJS= src/symbols/lambdasymbol.o \
 	src/symbols/freesymbol.o \
 
 all: ${OBJS}
-	${LD} -o libracul.so ${OBJS}  
 
 clean:
-	rm -f libracul.so ${OBJS}
+	rm -f ${OBJS}
 
 .c.o: ${CC} -I./src/symbols -c $<

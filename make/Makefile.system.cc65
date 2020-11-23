@@ -10,6 +10,5 @@ OBJS= src/symbols/lambdasymbol.o \
 
 
 all: ${OBJS}
-	${LD} -o libracul.o ${OBJS}  
 
 .c.o: ${CC} -Isrc/symbols -c $<  ### FIXME -I
